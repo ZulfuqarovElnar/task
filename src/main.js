@@ -1,9 +1,9 @@
-import './assets/css/tailwind.css'
+import Navbar from './components/navbar';
 
 function Main() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Navbar/>
     </div>
   );
 }

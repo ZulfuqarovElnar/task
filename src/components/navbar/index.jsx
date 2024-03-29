@@ -20,10 +20,10 @@ export default function Navbar() {
                 <div className='flex items-center'>
                     <div className={`lg:flex lg:flex-row lg:relative lg:w-auto lg:top-0 lg:h-auto lg:bg-transparent lg:shadow-none lg:overflow-visible w-full bg-white flex flex-col shadow-box fixed left-0 z-40 top-[90px] transition-all duration-300 overflow-hidden  ${menuVisible ? 'h-auto' : ' h-0'}`}>
                         <ul className='lg:flex-row lg:flex lg:gap-6 lg:px-0 lg:pt-6 flex flex-col py-6 pt-6 px-10 gap-3'>
-                            <li className='lg:hover:border-b lg:hover:border-black border-0 transition-all'><a href="/home">Home</a></li>
-                            <li className='lg:hover:border-b lg:hover:border-black border-0 transition-all'><a href="/about">About</a></li>
+                            <li className='lg:hover:border-b lg:hover:border-black border-0 transition-all'><a href="/">Home</a></li>
+                            <li className='lg:hover:border-b lg:hover:border-black border-0 transition-all'><a href="/">About</a></li>
                             <li className='lg:hover:border-b lg:hover:border-black border-0 transition-all'>
-                                <a className='flex items-center' href="/blog">
+                                <a className='flex items-center' href="/">
                                     <Popover>
                                         <Popover.Button className="focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
                                             Blog
@@ -56,7 +56,7 @@ export default function Navbar() {
                                     </Popover>
                                 </a>
                             </li>
-                            <li className='lg:hover:border-b lg:hover:border-black border-0 transition-all'><a href="/contact-us">Contact Us</a></li>
+                            <li className='lg:hover:border-b lg:hover:border-black border-0 transition-all'><a href="/">Contact Us</a></li>
                         </ul>
                         <div className='px-10 flex md:hidden items-center gap-2'>
                             <input placeholder='Search' className='max-w-[200px] w-full py-1 px-2 rounded-lg bg-slate-200' type="text" />

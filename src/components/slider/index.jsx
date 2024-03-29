@@ -22,13 +22,13 @@ const Slider = () => {
   }, [currentIndex, images.length]);
 
   return (
-    <div className="flex justify-center pt-10 h-screen">
+    <div className="flex justify-center pt-[100px] md:pt-10 h-screen">
       <div className="relative">
-        <div className="relative w-[400px] h-[600px]">
+        <div className="relative w-[275px] h-[300px]  md:w-[330px] md:h-[500px] lg:w-[400px] lg:h-[600px]">
           {images.map((image, index) => (
             <img
               key={index}
-              className={`absolute ${index === currentIndex ? 'z-20 left-16' : 'z-10 left-8 top-8'} w-[500px] h-[500px] object-cover transition-opacity duration-500 ${transitioning ? 'opacity-0' : 'opacity-100'}`}
+              className={`absolute ${index === currentIndex ? 'z-20 left-8 lg:left-16' : 'z-10 left-0 lg:left-8 top-8'} lg:w-[500px] lg:h-[500px] w-[275px] h-[300px]  md:w-[330px] md:h-[500px] object-cover transition-opacity duration-500 ${transitioning ? 'opacity-0' : 'opacity-100'}`}
               src={image.src}
               alt={image.alt}
             />

@@ -6,8 +6,8 @@ import Slider from '../slider'
 export default function Home() {
     return (
         <div>
-            <div className='grid grid-cols-2'>
-                <div className='py-[80px] pl-[80px]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 pt-[90px]'>
+                <div className='md:py-[80px] md:pl-[80px] md:pr-0 p-10'>
                     <p className='text-[#13829B]'><FontAwesomeIcon icon={faMinus} /> GEORGESKETCH</p>
                     <div className='flex relative'>
                         <h1 className='text-[40px] py-8 pr-10 font-bold text-[#333] leading-14'>Lorem ipsum dolor sit amet, <span className='text-[#13829B]'>consectetur</span> adipiscing</h1>
@@ -22,8 +22,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='relative'>
-                    <img className='absolute z-30 w-[233px] h-[233px] rounded-full border-8 border-white mt-[160px]' src="img/logo.svg" alt="" />
+                <div className='relative mx-auto max-w-[300px] md:max-w-[500px] w-full h-auto md:mx-auto'>
+                    <img className='absolute -left-20 top-8 md:left-0 z-30 w-[180px] h-[180px] md:w-[233px] md:h-[233px] rounded-full border-8 border-white mt-[160px]' src="img/logo.svg" alt="" />
                     <Slider />
                 </div>
             </div>
